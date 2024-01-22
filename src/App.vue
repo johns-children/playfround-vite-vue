@@ -5,7 +5,7 @@
       <router-link to="/about">About</router-link>
     </div>
 
-    <router-view />
+    <router-view class="main flex-item"/>
   </div>
 </template>
 
@@ -17,11 +17,12 @@ export default {
 
 <style>
 #app {
+  height: 100vh;
   display: flex;
 }
 
 #sidebar {
-  width: 200px;
+  width: 100px;
   padding: 20px;
   background-color: #f0f0f0;
 }
@@ -35,5 +36,13 @@ export default {
 
 #sidebar a:hover {
   text-decoration: underline;
+}
+
+.main {
+  padding: 20px
+}
+
+.flex-item {
+  flex: 1
 }
 </style>
